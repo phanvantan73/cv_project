@@ -1,20 +1,8 @@
-import {
-  getToken,
-} from '@/utils/auth';
-
-// import {
-//   getUserInfo
-// } from '@/api/user';
-
 const state = {
-  token: getToken(),
   info: {}
 };
 
 const mutations = {
-  SET_TOKEN: (_state, token) => {
-    _state.token = token;
-  },
   SET_INFO: (_state, info) => {
     _state.info = info;
   }
@@ -25,13 +13,12 @@ const actions = {
     commit
   }) {
     try {
-      // const data = await getUserInfo();
-      const {
-        data
-      } = {
-        name: 'user name',
+      const data = {
+        surname: 'Phan Van',
+        lastname: 'Tan',
+        avatar: 'assets/avatar.jpg',
         age: '24',
-        email: 'user@gmail.com'
+        email: 'phan.van.tan@gmail.com'
       };
       commit('SET_INFO', data);
 
