@@ -1,5 +1,13 @@
 # cv_project
 
+ The project was made by Phan Van Tan for the purpose of learning Vuejs.
+ <br>
+ * The components applied in the project:
+   * Vue.
+   * Vuex.
+   * Vue router.
+   * Framework Element UI.
+
 ## Project setup
 ```
 yarn install
