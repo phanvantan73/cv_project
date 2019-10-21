@@ -3,14 +3,14 @@
 	    <nav class="navbar navbar-expand-lg navbar-light bg-pink">
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <router-link to="/">HOME</router-link>
                 </li>
                 <li class="nav-item">
                     <router-link to="/career">CAREER</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link to="/profile">PROFILE</router-link>
+                    <router-link to="/work-experience">WORK EXPERIENCE</router-link>
                  </li>
             </ul>
           </div>
@@ -37,6 +37,10 @@ li.nav-item {
     margin-left: 10px;
 }
 
+.active {
+  color: #e41b05;
+}
+
 a {
 	text-decoration: none;
 	color: black;
@@ -44,6 +48,6 @@ a {
 
 li>a:hover {
     text-decoration: none;
-	color: white;
+    color: #e41b05;
 }
 </style>

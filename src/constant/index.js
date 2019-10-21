@@ -8,3 +8,27 @@ export const careerData = [
 	'Desire to immerse yourself in the joyful, youthful but equally professional atmosphere of the ' + 
 		'training room before officially embarking on challenging and challenging projects.'
 ];
+
+export const workExperience = [
+	{
+		work: 'Website development staff',
+		start_time: '07/2018',
+		end_time: '12/2018',
+		image: 'assets/php.jpg',
+		experience: [
+			'Support project web design for companies using PHP language',
+			'Interface design using HTML5 CSS3 language',
+			'Prepare daily work report'
+		]
+	},
+	{
+		work: 'Web Designer staff',
+		start_time: '01/2019',
+		end_time: '06/2019',
+		image: 'assets/html.png',
+		experience: [
+			'Design web interface, cut psd according to usage template (HTML5, Css3, Javascript)',
+			'Designer logo, web icon'
+		]
+	}
+];
