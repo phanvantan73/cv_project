@@ -1,10 +1,16 @@
+import { careerData } from '../../constant/index'
+
 const state = {
-  info: {}
+  info: {},
+  career: [],
 };
 
 const mutations = {
   SET_INFO: (_state, info) => {
     _state.info = info;
+  },
+  SET_CAREER: (_state, career) => {
+    _state.career = career;
   }
 };
 
@@ -21,6 +27,17 @@ const actions = {
         email: 'phan.van.tan@gmail.com'
       };
       commit('SET_INFO', data);
+
+      return Promise.resolve();
+    } catch (error) {
+      return Promise.reject(error);
+    }
+  },
+  async getCareer({
+    commit
+  }) {
+    try {
+      commit('SET_CAREER', careerData);
 
       return Promise.resolve();
     } catch (error) {

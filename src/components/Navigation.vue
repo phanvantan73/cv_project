@@ -4,10 +4,13 @@
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <router-link to="/">Home</router-link>
+                    <router-link to="/">HOME</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link to="/profile">Profile</router-link>
+                    <router-link to="/career">CAREER</router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link to="/profile">PROFILE</router-link>
                  </li>
             </ul>
           </div>

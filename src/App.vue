@@ -15,15 +15,14 @@
             'Navigation': Navigation
         },
         computed: {
-            ...mapGetters({
-                info: 'info'
-            }),
             ...mapActions({
-                getUser: 'getUser'
+                getUser: 'getUser',
+                getCareer: 'getCareer'
             })
         },
         mounted() {
-            this.$store.dispatch('getUser')
+            this.$store.dispatch('getUser'),
+            this.$store.dispatch('getCareer')
         }
     };
 </script>
