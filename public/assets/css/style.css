@@ -13,3 +13,7 @@ body {
 .bg-white {
 	background-color: white !important;
 }
+
+.m-bot-0 {
+	margin-bottom: 0;
+}

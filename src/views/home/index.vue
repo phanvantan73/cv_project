@@ -54,8 +54,4 @@
 #home {
     color: #fd7e14;
 }
-
-.m-bot-0 {
-	margin-bottom: 0;
-}
 </style>

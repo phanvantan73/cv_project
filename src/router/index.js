@@ -12,6 +12,11 @@ export const routes = [{
     path: '/profile',
     name: 'Profile',
     component: () => import('@/views/profile/index')
+  },
+  {
+    path: '/career',
+    name: 'CAREER',
+    component: () => import('@/views/career/index')
   }
 ];
 
