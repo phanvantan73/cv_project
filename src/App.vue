@@ -17,12 +17,14 @@
         computed: {
             ...mapActions({
                 getUser: 'getUser',
-                getCareer: 'getCareer'
+                getCareer: 'getCareer',
+                getExperience: 'getExperience'
             })
         },
         mounted() {
             this.$store.dispatch('getUser'),
-            this.$store.dispatch('getCareer')
+            this.$store.dispatch('getCareer'),
+            this.$store.dispatch('getExperience')
         }
     };
 </script>

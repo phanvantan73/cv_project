@@ -1,8 +1,9 @@
-import { careerData } from '../../constant/index'
+import { careerData, workExperience } from '../../constant/index'
 
 const state = {
   info: {},
   career: [],
+  experience: {}
 };
 
 const mutations = {
@@ -11,6 +12,9 @@ const mutations = {
   },
   SET_CAREER: (_state, career) => {
     _state.career = career;
+  },
+  SET_EXPERIENCE: (_state, experience) => {
+    _state.experience = experience;
   }
 };
 
@@ -38,6 +42,17 @@ const actions = {
   }) {
     try {
       commit('SET_CAREER', careerData);
+
+      return Promise.resolve();
+    } catch (error) {
+      return Promise.reject(error);
+    }
+  },
+  async getExperience({
+    commit
+  }) {
+    try {
+      commit('SET_EXPERIENCE', workExperience);
 
       return Promise.resolve();
     } catch (error) {

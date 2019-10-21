@@ -17,6 +17,11 @@ export const routes = [{
     path: '/career',
     name: 'CAREER',
     component: () => import('@/views/career/index')
+  },
+  {
+    path: '/work-experience',
+    name: 'WORK_EXPERIENCE',
+    component: () => import('@/views/work_experience/index')
   }
 ];
 
