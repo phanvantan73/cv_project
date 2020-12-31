@@ -1,8 +1,15 @@
-import request from '@/utils/request';
+import { Data } from '@/constant';
 
-export function getUserInfo() {
-  return request({
-    url: '/auth/user',
-    method: 'get'
-  });
+const {careerData, workExperience, information} = Data;
+
+export default {
+  getInfo() {
+    return information;
+  },
+  getCareers() {
+    return careerData;
+  },
+  getWorkExperiences() {
+    return workExperience;
+  },
 }

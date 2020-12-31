@@ -4,7 +4,6 @@ import {
   getToken
 } from './auth';
 
-// const camelcaseKeys = require('camelcase-keys');
 
 const service = axios.create({
   // baseURL: process.env.VUE_APP_BASE_API,
