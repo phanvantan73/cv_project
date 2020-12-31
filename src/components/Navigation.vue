@@ -1,53 +1,57 @@
 <template>
-  	<div class="full-width">
-	    <nav class="navbar navbar-expand-lg navbar-light bg-pink">
-          <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <router-link to="/">HOME</router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link to="/career">CAREER</router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link to="/work-experience">WORK EXPERIENCE</router-link>
-                 </li>
-            </ul>
-          </div>
-        </nav>
-  	</div>
+  <div class="full-width">
+    <nav class="navbar navbar-expand-lg navbar-light bg-pink">
+      <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <router-link to="/">HOME</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/career">CAREER</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/work-experience">WORK EXPERIENCE</router-link>
+        </li>
+      </ul>
+      </div>
+    </nav>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "Navigation"
-    };
+  export default {
+    name: "Navigation"
+  };
 </script>
 
 <style>
-.full-width {
-	width: 100%;
-}
+  .full-width {
+    width: 100%;
+  }
 
-.bg-pink {
-	background-color: #f5dadf !important;
-}
+  .bg-pink {
+    background-color: #f5dadf !important;
+  }
 
-li.nav-item {
+  li.nav-item {
     margin-left: 10px;
-}
+  }
 
-.active {
-  color: #e41b05;
-}
+  .active {
+    color: #e41b05;
+  }
 
-a {
-	text-decoration: none;
-	color: black;
-}
+  a {
+    text-decoration: none;
+    color: black;
+  }
 
-li>a:hover {
+  li>a:hover {
     text-decoration: none;
     color: #e41b05;
-}
+  }
+
+  li>.router-link-exact-active {
+    color: #fd7e14;
+  }
 </style>
