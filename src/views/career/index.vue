@@ -3,11 +3,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="jumbotron m-bot-0">
-          <ul class="list-group">
-            <li v-for="(item, key) in career" :key="key" class="list-group-item">
-              {{ item }}
-            </li>
-          </ul>
+          <List :career="career" />
         </div>
       </div>
     </div>
@@ -15,19 +11,22 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex'
+  import { mapGetters } from 'vuex';
+  import List from './components/List';
+
   export default {
-      name: "CAREER",
-      computed: {
-        ...mapGetters({
-          career: 'career'
-        }),
-      }
+    name: "CAREER",
+    components: {
+      List,
+    },
+    computed: {
+      ...mapGetters({
+        career: 'career'
+      }),
+    },
   };
 </script>
 
 <style scoped>
-  #career {
-      color: #fd7e14;
-  }
+  @import url('./style.scss');
 </style>

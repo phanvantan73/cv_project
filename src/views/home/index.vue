@@ -5,31 +5,11 @@
         <div class="jumbotron m-bot-0">
           <div class="row">
             <div class="col-md-6">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="float-left text-left">
-                    <h1>Hello!</h1>
-                    <h1>My name is</h1>
-                    <h1>{{ info.lastname }}</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="card">
-                      <div class="card-body text-left">
-                        I design and improve more beautiful websites. I provide high quality web development services.
-                      </div>
-                  </div>
-                </div>
-              </div>
+              <BasicInfo :lastname="info.lastname" />
+              <Description />
             </div>
             <div class="col-md-6">
-              <img :src="info.avatar" alt="..."
-                width="100%"
-                height="100%"
-                class="rounded-circle"
-              >
+              <UserImage :avatar="info.avatar" />
             </div>
           </div>
         </div>
@@ -40,18 +20,25 @@
 
 <script>
   import { mapGetters } from 'vuex'
+  import BasicInfo from './components/BasicInfo';
+  import UserImage from './components/UserImage';
+  import Description from './components/Description';
+
   export default {
     name: "Home",
+    components: {
+      BasicInfo,
+      UserImage,
+      Description,
+    },
     computed: {
       ...mapGetters({
         info: 'info'
       }),
-    }
+    },
   };
 </script>
 
 <style scoped>
-  #home {
-    color: #fd7e14;
-  }
+  @import url('./style.scss');
 </style>
