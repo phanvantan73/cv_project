@@ -11,7 +11,7 @@
   export default {
     name: "App",
     components: {
-      'Navigation': Navigation,
+      Navigation,
     },
     mounted() {
       this.$store.dispatch('getUser'),

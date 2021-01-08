@@ -25,33 +25,5 @@
 </script>
 
 <style>
-  .full-width {
-    width: 100%;
-  }
-
-  .bg-pink {
-    background-color: #f5dadf !important;
-  }
-
-  li.nav-item {
-    margin-left: 10px;
-  }
-
-  .active {
-    color: #e41b05;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
-
-  li>a:hover {
-    text-decoration: none;
-    color: #e41b05;
-  }
-
-  li>.router-link-exact-active {
-    color: #fd7e14;
-  }
+  @import url('./style.scss');
 </style>
